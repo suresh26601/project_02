@@ -9,132 +9,130 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <style>
-      
-      /* Full-width input fields */
-      .input1[type=text], .input1[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
+  <style>
+    .input2[type=text],
+    .input2[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+
+    /* Extra styles for the cancel button */
+
+    /* Center the image and position the close button */
+    .imgcontainer1 {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    /* img.avatar {
+    width: 4%;
+    border-radius: 50%;
+  } */
+
+    .container1 {
+      padding: 16px;
+    }
+
+    span.psw1 {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal1 {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 10;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content1 {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close1 {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close1:hover,
+    .close1:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate1 {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
       }
-      
-      /* Set a style for all buttons */
-      .button1 {
-        background-color: #04AA6D;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
+
+      to {
+        -webkit-transform: scale(1)
       }
-      
-      .button1:hover {
-        opacity: 0.8;
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
       }
-      
-      /* Extra styles for the cancel button */
-      .cancelbtn1 {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #f44336;
+
+      to {
+        transform: scale(1)
       }
-      
-      /* Center the image and position the close button */
-      .imgcontainer1 {
-        text-align: center;
-        margin: 24px 0 12px 0;
-        position: relative;
-      }
-      
-      img.avatar1 {
-        width: 40%;
-        border-radius: 50%;
-      }
-      
-      .container1 {
-        padding: 16px;
-      }
-      
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
       span.psw1 {
-        float: right;
-        padding-top: 16px;
+        display: block;
+        float: none;
       }
-      
-      /* The Modal (background) */
-      .modal1 {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        padding-top: 60px;
-      }
-      
-      /* Modal Content/Box */
-      .modal-content1 {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-      }
-      
-      /* The Close Button (x) */
-      .close1 {
-        position: absolute;
-        right: 25px;
-        top: 0;
-        color: #000;
-        font-size: 35px;
-        font-weight: bold;
-      }
-      
-      .close1:hover,
-      .close1:focus {
-        color: red;
-        cursor: pointer;
-      }
-      
-      /* Add Zoom Animation */
-      .animate1 {
-        -webkit-animation: animatezoom 0.6s;
-        animation: animatezoom 0.6s
-      }
-      
-      @-webkit-keyframes animatezoom {
-        from {-webkit-transform: scale(0)} 
-        to {-webkit-transform: scale(1)}
-      }
-        
-      @keyframes animatezoom {
-        from {transform: scale(0)} 
-        to {transform: scale(1)}
-      }
-      
-      /* Change styles for span and cancel button on extra small screens */
-      @media screen and (max-width: 300px) {
-        span.psw1 {
-           display: block;
-           float: none;
-        }
-        .cancelbtn1 {
-           width: 100%;
-        }
-      }
-      </style>
+    }
+  </style>
+
   <title>Project_2</title>
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+  <script src="images/https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
     crossorigin="anonymous"></script>
   <!-- ***********navbar******** -->
@@ -164,42 +162,58 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contact Us</a>
+            <a class="nav-link text-light" href="#contactfooter">Contact Us</a>
           </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-          <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-outline-danger mx-1">Login</button>
+          <button onclick="document.getElementById('id01').style.display='block'"
+            class="btn btn-outline-danger mx-1">Login</button>
         </form>
       </div>
     </div>
   </nav>
   <!-- **********login form -->
-  <div id="id01" class="modal1" style="z-index: 10;">
-  
-    <form class="modal-content1 animate1" >
-      <!-- <div class="imgcontainer1">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
-        <img src="img_avatar2.png" alt="Avatar" class="avatar1">
-      </div> -->
-  
+  <div id="id01" class="modal1 btn-outline-primary" style="display: block;">
+
+    <form class="modal-content1 animate1" action="/action_page.php" method="post">
+      <div class="imgcontainer1">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">×</span>
+        <img src="images/admin.jpg" alt="Avatar" class="avatar1" width="100px" height="100px">
+      </div>
+
       <div class="container1">
         <label for="uname"><b>Username</b></label>
-        <input type="text" class="input1" placeholder="Enter Username" name="uname" required>
-  
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" class="input1" name="psw" required>
-          
-        <button type="submit" class="button1">Login</button>
+        <input class="input2" type="text" placeholder="Enter Username" name="uname" required="">
+
+        <label for="psw1"><b>Password</b></label>
+        <input class="input2" type="password" placeholder="Enter Password" name="psw" required="">
+
+        <button class="btn btn-outline-success" type="submit">Login</button>
         <label>
-          <input type="checkbox" class="input1" name="remember"> Remember me
+          <input class="input2" type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
-  
-      
+
+      <div class="container1" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn1 btn btn-outline-danger">Cancel</button>
+        <span class="psw1">Forgot <a href="#">password?</a></span>
+      </div>
     </form>
   </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
   <!-- *******carousal******** -->
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -212,21 +226,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://source.unsplash.com/1600x450/?laptop,apple,code" class="d-block w-100" alt="...">
+        <img src="images/coro1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Learn With Us</h2>
           <p>Always,start from 'Shunya'.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://source.unsplash.com/1600x450/?night,moon" class="d-block w-100" alt="...">
+        <img src="images/coro2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Learn With Us</h2>
           <p>Learn always and move ahead.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://source.unsplash.com/1600x450/?company,calculator" class="d-block w-100" alt="...">
+        <img src="images/coro3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Learn With Us</h2>
           <p>But, never forget 'Shunya'.</p>
@@ -244,13 +258,13 @@
   </div>
   <!-- **********alart******** -->
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Be alert!</strong> otherwise Shunya will beat you.
+    <strong>Don't Miss!</strong> Courses will not be free for long.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   <!-- **************about us******** -->
   <div class="container border-success text-center bd-sidebar bg-light" id="aboutus">
     <hr>
-    <h1 class="text-primary mt-2">About Us</h1>
+    <h1 class="text-primary mt-2">About</h1>
     <p class="bg-light mt-4">
     <h3 class="text-success">We Are Ambitious</h3>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ullam architecto laboriosam dolorem, quidem
@@ -345,7 +359,7 @@
       <h3 id="mlearn">Machine Learning</h3>
       <div class="card-group">
         <div class="card m-lg-1" style="width: 18rem;">
-          <img src="https://source.unsplash.com/1600x900/?data" class="card-img-top" alt="...">
+          <img src="images/ml1.jpg" class="card-img-top" alt="..."  height="150px">
           <div class="card-body">
             <h5 class="card-title">Python for ML</h5>
             <p class="card-text"></p>
@@ -353,7 +367,7 @@
           </div>
         </div>
         <div class="card m-lg-1" style="width: 18rem;">
-          <img src="https://source.unsplash.com/1600x900/?network" class="card-img-top" alt="...">
+          <img src="images/ml2.jpg" class="card-img-top" alt="..."  height="150px">
           <div class="card-body">
             <h5 class="card-title">R-studio for ML</h5>
             <p class="card-text"></p>
@@ -361,7 +375,7 @@
           </div>
         </div>
         <div class="card m-lg-1" style="width: 18rem;">
-          <img src="https://source.unsplash.com/1600x900/?networks" class="card-img-top" alt="...">
+          <img src="images/ml3.jpg" class="card-img-top" alt="..."  height="150px">
           <div class="card-body">
             <h5 class="card-title">Basic ML Concepts</h5>
             <p class="card-text"></p>
@@ -369,7 +383,7 @@
           </div>
         </div>
         <div class="card m-lg-1" style="width: 18rem;">
-          <img src="https://source.unsplash.com/1600x900/?project" class="card-img-top" alt="...">
+          <img src="images/ml4.jpg" class="card-img-top" alt="..."  height="150px">
           <div class="card-body">
             <h5 class="card-title">Projects On ML</h5>
             <p class="card-text"></p>
@@ -382,7 +396,7 @@
         <h3 id="dscience">Data Science</h3>
         <div class="card-group">
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?science" class="card-img-top" alt="...">
+            <img src="images/ds4.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Python for Data Science</h5>
               <p class="card-text"></p>
@@ -390,7 +404,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?laboratory" class="card-img-top" alt="...">
+            <img src="images/ds3.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">R-studio for Data Science</h5>
               <p class="card-text"></p>
@@ -398,7 +412,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?computer network" class="card-img-top" alt="...">
+            <img src="images/ds2.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Basic Data Science Concepts</h5>
               <p class="card-text"></p>
@@ -406,7 +420,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?microprocessor" class="card-img-top" alt="...">
+            <img src="images/ds1.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Projects On Data Science</h5>
               <p class="card-text"></p>
@@ -421,7 +435,7 @@
         <h3 id="aintelligence">Artificial Intelligence</h3>
         <div class="card-group">
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?robot" class="card-img-top" alt="...">
+            <img src="images/ai4.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Python for AL</h5>
               <p class="card-text"></p>
@@ -429,7 +443,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?intelligence" class="card-img-top" alt="...">
+            <img src="images/ai2.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">R-studio for AL</h5>
               <p class="card-text"></p>
@@ -437,7 +451,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?machines" class="card-img-top" alt="...">
+            <img src="images/ai4.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Basic AL Concepts</h5>
               <p class="card-text"></p>
@@ -445,7 +459,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?robotics" class="card-img-top" alt="...">
+            <img src="images/ai1.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Projects On AL</h5>
               <p class="card-text"></p>
@@ -460,7 +474,7 @@
         <h3 id="dstructure">Data Structure</h3>
         <div class="card-group">
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?structure" class="card-img-top" alt="...">
+            <img src="images/dsa2.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Python for DSA</h5>
               <p class="card-text"></p>
@@ -468,7 +482,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?algorithm" class="card-img-top" alt="...">
+            <img src="images/dsa3.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Graphs</h5>
               <p class="card-text"></p>
@@ -476,7 +490,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?Data " class="card-img-top" alt="...">
+            <img src="images/dsa4.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Trees</h5>
               <p class="card-text"></p>
@@ -484,7 +498,7 @@
             </div>
           </div>
           <div class="card m-lg-1" style="width: 18rem;">
-            <img src="https://source.unsplash.com/1600x900/?graph" class="card-img-top" alt="...">
+            <img src="images/dsa1.jpg" class="card-img-top" alt="..."  height="150px">
             <div class="card-body">
               <h5 class="card-title">Linked List</h5>
               <p class="card-text"></p>
@@ -498,36 +512,65 @@
     </div>
   </div>
   <!-- ********** feedbck form******** -->
-  <div class="container mt-6 text-center " id="feedback">
+  <div class="container mt-6 text-center bg-light pb-2 mb-2" id="feedback">
     <hr>
     <h1 class="text-primary">feedback Form</h1>
     <div>
       <form class="mb-3">
         <input type="text" class="form-control mb-1" id="exampleFormControlInput1" placeholder="Name: (Shunya)">
-        <input type="email" class="form-control mb-1" id="exampleFormControlInput1" placeholder="Email: (shunya00@expert.com">
+        <input type="email" class="form-control mb-1" id="exampleFormControlInput1"
+          placeholder="Email: (shunya00@expert.com">
         <textarea class="form-control mb-1" id="exampleFormControlTextarea1" rows="3" placeholder="Feedback"></textarea>
-        <input type="reset" value="reset">
+        <button class="btn btn-outline-success mt-1" type="reset">Submit</button>
       </form>
       </form>
     </div>
   </div>
   <!-- *******Footer************ -->
-  <div class="container-fluid bg-dark">
+  <div class="container-fluid bg-dark text-light" id="contactfooter">
+    <div class="row container">
+      <div class="col-3">
+        <img src="images/images.jpg" alt="" height="100%" width="100%">
+      </div>
+      <div class="col-9">
+        <div class="row">
+
+          <div class="col-2 container text-light align-self-start">
+            <br>
+            <h5><strong>Resources</strong></h5>
+            <hr>
+            <h6>Blog</h6>
+            <h6>Glossary</h6>
+            <h6>Youtube</h6>
+          </div>
+       
+        <div class="col-2 container text-light align-self-end">
+          <br>
+          <h5><strong>Say Hello</strong></h5>
+          <hr>
+          <h6>2425 Richmond Rd SW<br>
+            Calgary, AB T2T 0Y7
+          </h6>
+          <h6>+1800500300</h6>
+        </div>
+      </div>
     
-    <div class="text-center text-light"><p>This is &copy;Copy Right content.</p></div>
+      <div class="row">
+        <hr>
+        <div class="d-flex justify-content-center">
+          <img src="images/linkedin.jpg" alt="" width="40px" height="40px" class="mx-1">
+          <img src="images/youtube.jpg" alt="" width="40px" height="40px" class="mx-1">
+        </div>
+        <div class="text-center text-light" style="margin-bottom: -17px;">
+          <p>Copyright &copy;2021</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
 
   </div>
-  <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
+
 </body>
 
 </html>
